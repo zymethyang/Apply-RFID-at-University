@@ -33,7 +33,6 @@ class ListEvents extends Component {
             this.setState({
                 dataEvents: res.data
             });
-            console.log(res.data);
         });
     }
 
@@ -46,7 +45,6 @@ class ListEvents extends Component {
                     <td>{moment.unix(value.tgbd).format("DD/MM/YYYY hh:mm A")}</td>
                     <td>{moment.unix(value.tgkt).format("DD/MM/YYYY hh:mm A")}</td>
                     <td>{value.diemCong}</td>
-                    <td>{value.thDu}</td>
                 </tr>
             );
         })
@@ -67,7 +65,6 @@ class ListEvents extends Component {
                                         <th>Thời gian bắt đầu</th>
                                         <th>Thời gian kết thúc</th>
                                         <th>Điểm cộng</th>
-                                        <th>Số lượng tham dự</th>
                                     </tr>
                                 </thead>
 
